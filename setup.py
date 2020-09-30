@@ -30,7 +30,7 @@ setup(
     author='Laimonas Sutkus',
     author_email='laimonas.sutkus@biomapas.com',
     keywords='AWS CloudFormation Output',
-    url='https://github.com/biomapas/BiomapasAwsCfOut.git',
+    url='https://github.com/biomapas/B.CfOutputs.git',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
