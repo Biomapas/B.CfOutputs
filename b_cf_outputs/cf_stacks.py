@@ -21,7 +21,19 @@ class CfStacks:
         Gets all available stacks.
         :return:
         """
-        response = self.client.list_stacks()
+        response = self.client.list_stacks(
+            StackStatusFilter=[
+                'CREATE_COMPLETE',
+                'ROLLBACK_COMPLETE',
+                'UPDATE_COMPLETE_CLEANUP_IN_PROGRESS',
+                'UPDATE_COMPLETE',
+                'UPDATE_ROLLBACK_FAILED',
+                'UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS',
+                'UPDATE_ROLLBACK_COMPLETE',
+                'IMPORT_COMPLETE',
+                'IMPORT_ROLLBACK_COMPLETE',
+            ]
+        )
         stacks = response['StackSummaries']
 
         for stack in stacks:

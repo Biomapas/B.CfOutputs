@@ -35,7 +35,7 @@ class CfOutputs:
 
         for stack in stack_names:
             response = self.client.describe_stacks(StackName=stack)
-            response = response['Stacks'][0]['Outputs']
+            response = response['Stacks'][0].get('Outputs', [])
             stack_outputs = {out['OutputKey'] or out['ExportName']: out['OutputValue'] for out in response}
             all_outputs[stack] = stack_outputs
 
