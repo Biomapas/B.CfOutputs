@@ -1,5 +1,6 @@
+include VERSION
 include LICENSE
-include HISTORY.md
 include README.md
+include HISTORY.md
 
 recursive-include b_cf_outputs *.py

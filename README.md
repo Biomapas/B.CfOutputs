@@ -48,7 +48,7 @@ Or directly install it through source.
 pip install .
 ```
 
-#### Examples
+### Usage & Examples
 
 Create a boto3 session:
 ```python
