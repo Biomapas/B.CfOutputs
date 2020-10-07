@@ -23,7 +23,7 @@ jobs:
           pip list
 
       - name: Test
-          run: pytest --cov=b_cf_outputs b_cf_outputs_test
+        run: pytest --cov=b_cf_outputs b_cf_outputs_test
 
       - name: Install
         run: pip install wheel twine
